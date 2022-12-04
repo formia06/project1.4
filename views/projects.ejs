@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+<% if( action == 'findByName') { %>
+
+  <div class="btn">
+    <a href="/projects">
+      <p>Back</p>
+    </a>
+  </div>
+
+  <%- include('projectPartials/projectTableView'); -%>
+
+
+  <% } else { %>
+
+  <%- include('projectPartials/projectTableView'); -%>
+
+  <% } %>
+
+<%- include('partials/footer'); -%>

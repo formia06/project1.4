@@ -1,0 +1,71 @@
+<div class="card" id="new-expense">
+  <div class="card-header">Enter New Bill</div>
+  <div class="card-body">
+    <form method="POST" action="/erp/new_expense_add">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>Bill Number</label>
+            <input type="number" name="bill_no" id="bill_no" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>chart_id</label>
+            <input type="number" name="chart_id" id="chart_id" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>Name</label>
+            <input type="text" name="name" id="name" class="form-control" />
+          </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>description</label>
+            <input type="text" name="description" id="description" class="form-control" />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>amount</label>
+            <input type="number" name="amount" id="amount" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>qty</label>
+            <input type="number" name="qty" id="qty" class="form-control" />
+          </div>
+        </div>
+
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>Due Date (yyyy-mm-dd)</label>
+            <input type="string" name="duedate" id="duedate" class="form-control" />
+          </div>
+        </div>
+
+
+      <div class="mb-3">
+        <input type="submit" name="submit_button" class="btn btn-primary" value="Add" />
+      </div>
+    </form>
+  </div>
+</div>

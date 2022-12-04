@@ -1,0 +1,27 @@
+<p class="chart-label">
+      Timescale: <span id="current-timescale">Day</span>
+</p>
+
+<div>
+  <svg id="gantt" class="gantt">
+  </svg>
+</div>
+
+<div class="chart-controls">
+  <p>Change Chart Timescale</p>
+  <div class="button-cont">
+    <button id="day-btn">
+      Day
+    </button>
+
+    <button id="week-btn">
+      Week
+    </button>
+
+    <button id="month-btn">
+      Month
+    </button>
+  </div>
+</div>
+
+<script src=<%- __dirname + "/script/ganttChart.js"-%>></script>

@@ -1,0 +1,95 @@
+<%- include('partials/header'); -%>
+<h1>Dashboard</h1>
+
+<div class="container-fluid row">
+  <h1>Dynamic Dropdown Box</h1>
+
+  <div class="Card">
+    <div class="card-header">
+      Dynamic Dropdown
+    </div>
+    <div class="card-body">
+
+      <div class="mb-3">
+        <select type="text" class="" name="projectName" id="projectName">
+          <option value="">Select Department</option>
+          <% for(var i = 0; i < projectFinance.length; i++) { %>
+          <option value="<%= projectFinance[i].projectName %>"> <%= projectFinance[i].projectName %></option>
+          <% }%>
+        </select>
+      </div>
+      <div class="mb-3">
+        <select type="number" class="" name="taskNumber" id="taskNumber">
+          <option value="">Select Project Number</option>
+          <% for(var i = 0; i < projectFinance.length; i++) { %>
+            <option value="<%= projectFinance[i].taskNumber %>"> <%= projectFinance[i].taskNumber %></option>
+            <% }%>
+        </select>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid row">
+  <div class="card-header">
+    Table
+  </div>
+
+  <div>
+
+    
+  </div>
+
+</div>
+<script>
+
+function _(element)
+{
+    return document.getElementById(element);
+}
+
+function fetch_data(parent_element, child_element, type)
+{
+    fetch('/get_data?type='+type+'&parent_value='+parent_element.value+'').then(function(response){
+        return response.json();
+    }).then(function(responseData){
+
+        var html = '';
+
+        if(type == 'load_number')
+        {
+            html = '<option value="">Select Project Number</option>';
+        }
+
+        if(type == 'load_name')
+        {
+            html = '<option value="">Select Project Name</option>';
+        }
+
+        for(var count = 0; count < responseData.length; count++)
+        {
+            html += '<option value="'+responseData[count]+'">'+responseData[count]+'</option>';
+        }
+
+        child_element.innerHTML = html;
+    });
+}
+
+_('projectName').onchange = function(){
+
+    fetch_data(_('projectName'), _('taskNumber'), 'load_number');
+
+};
+
+_('taskNumber').onchange = function(){
+
+    fetch_data( _('taskNumber'), _('projectName'), 'load_name');
+
+};
+
+
+
+</script>
+
+<%- include('partials/footer'); -%>

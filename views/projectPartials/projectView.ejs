@@ -1,0 +1,48 @@
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <tr>
+      <th>Project Name</th>
+      <th>Task No.</th>
+      <th>Department</th>
+      <th>Transaction Date</th>
+      <th>Income</th>
+      <th>Expenses</th>
+      <th>Running Total</th>
+    </tr>
+    <%
+                                    if(project.length > 0)
+                                    {
+                                        project.forEach(function(project){
+                                    %>
+                  <tr>
+                    <td><%= project.name %></td>
+                    <td><%= project.project_no %></td>
+                    <td><%= project.department_id %></td>
+                    <td><%= income.amount %></td>
+                    <td><%= expenses.amount %></td>
+                    <td><%= project.transdate %></td>
+                    <td><%= project.runningtotal %></td>
+
+                  </tr>
+                  <%
+                                    });
+                                }
+                                else
+                                {
+                                %>
+                  <tr>
+                    <td colspan="5">No Data Found</td>
+                  </tr>
+                  <%
+                                }
+                                %>
+
+
+
+
+
+
+
+  </table>
+
+</div>

@@ -1,0 +1,81 @@
+<div class="card" id="new-income">
+  <div class="card-header">Enter New Invoice</div>
+  <div class="card-body">
+    <form method="POST" action="/erp/new_income_add">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>Invoice Number</label>
+            <input type="number" name="invoice_no" id="invoice_no" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label>chart_id</label>
+            <input type="number" name="chart_id" id="chart_id" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label>Name</label>
+          <input type="text" name="name" id="name" class="form-control" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label>description</label>
+          <input type="text" name="description" id="description" class="form-control" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label>qty</label>
+          <input type="number" name="qty" id="qty" class="form-control" />
+        </div>
+      </div>
+
+
+
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label>amount</label>
+          <input type="number" name="amount" id="amount" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label>Due Date (yyyy-mm-dd)</label>
+          <input type="string" name="duedate" id="duedate" class="form-control" />
+        </div>
+      </div>
+
+
+
+
+      <!-- <div class="col-md-6">
+        <div class="mb-3">
+          <label>project_id</label>
+          <input type="number" name="project_id" id="project_id" class="form-control" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label>Department</label>
+          <input type="number" name="department_id" id="department_id" class="form-control" />
+        </div>
+      </div> -->
+
+
+      <div class="mb-3">
+        <input type="submit" name="submit_button" class="btn btn-primary" value="Add" />
+      </div>
+    </form>
+  </div>
+</div>
