@@ -1,0 +1,374 @@
+.container-fluid {
+
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #398AB9;
+}
+
+
+.navbar-nav  li a:hover {
+    color: #B1D0E0 !important;
+}
+
+.nav li a{
+  color: #fff;
+
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #398AB9;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+
+
+
+.gnatt-date {
+  overflow-x: scroll;
+}
+
+/* COLOR PALLET */
+/* #1A374D
+   #406882
+  #6998AB
+  #B1D0E0 */
+
+body {
+
+}
+
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+/* Buttons */
+.btn-home-link {
+  align-content: center;
+
+  width: 50px;
+}
+
+/* Navigation Section */
+
+#navigation-bar{
+  position: 0;
+  width: 100%;
+  background-color: #398AB9;
+  z-index: 1;
+}
+
+.nav-link-selected{
+  color: darkgrey;
+}
+
+.nav-link-unselected{
+  color: #F9F7F7;
+}
+
+.navbar-icon {
+  height: 2rem;
+}
+
+.profilepicture {
+  background-color: white;
+  border-radius: 100%;
+}
+
+/* Webpage Body */
+
+#page-body {
+
+  background-color: #F9F7F7;
+  text-align: left;
+}
+
+
+
+/* Title section */
+
+#title {
+  background-color: #F9F7F7;
+  color: #fff;
+  text-align: left;
+
+}
+
+.logo-container {
+  color: #fff;
+  padding-left: 90%;
+}
+
+.header-container {
+  margin: 2% 3%;
+}
+
+/* Filters Section */
+
+#filters {
+  /* padding: 1rem 5% 0.1rem; */
+  background-color: #fff;
+}
+
+#filters .btn {
+  margin-bottom: 2px;
+  background-color: #398AB9;
+  height: 2.5rem;
+}
+
+/* Application Section */
+
+
+
+#application {
+
+  position: relative;
+  padding: 1% 3%;
+  text-align: left;
+  background-color: #F9F7F7;
+}
+
+/* Welcome page */
+
+#welcome-body {
+  padding: 5% 5% 0.1rem;
+
+}
+
+#welcome-body h1 {
+  font-size: 4rem;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.welcome-page-header {
+  padding:  7%;
+}
+.welcome-page-header-img {
+  margin: 2% 10% 20% 2%;
+  height:  60%;
+}
+
+
+.home-album-img {
+  font-size: 10rem;
+  text-align: center;
+  margin: 0;
+}
+
+#featured-3{
+margin: auto;
+
+}
+
+
+.features-item  {
+  text-align: center;
+    padding: 0 5%;
+    font-size: 1.5rem;
+
+}
+
+.features-text{
+margin:0 150px;
+}
+
+.features-img {
+  font-size: 7rem;
+  padding: 30px;
+
+}
+
+
+/* Gnatt Chart */
+#gnatt{
+
+
+}
+
+.bottomTable{
+  margin: 5% 3%;
+}
+
+
+.chart_div{
+  margin: 50px 3% !important;
+  display: block;
+  margin-left: 20%;
+}
+
+#gnatt h4 {
+  text-align: left;
+  font-size: 1.4rem;
+}
+#gnatt h5 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+#gnatt h6 {
+  text-align: right;
+  font-size: 1.15rem;
+}
+
+
+
+.gnatt-chart {
+  padding: 2% 5% 0.1rem;
+
+}
+
+.gnatt-chart-header {
+  background-color: #406882;
+  font-size: 1.5REM;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.gnatt-chart-col-task {
+  width: 15REM;
+  border: solid 1px;
+}
+.gnatt-chart-col {
+  border: solid 1px;
+  width: 10REM;
+}
+
+.gantt-chart-fill {
+  background-color: blue;
+}
+
+/* ERP Section */
+
+.erp-box {
+  margin: 5% ;
+  height: 20rem;
+  width: 8rem;
+  background-color: #B1D0E0;
+}
+.card{
+margin: 2rem;
+padding: 2rem;
+
+}
+
+.erp-box-text{
+  text-align: right;
+}
+
+.erp-page-left{
+  padding-top: 6rem;
+}
+
+.accounting-table {
+  margin-bottom: 4%
+}
+/* Footer section */
+
+#footer {
+  padding: 1% 0;
+  background-color: #fff;
+}
+
+
+.welcome-page-footer {
+  height: 5%
+}
+
+
+.erp-box:hover {
+  cursor: pointer;
+  border: Solid 2px;
+
+}
+
+.erp-box-text {
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.erp-page-box-img {
+  font-size: 3rem;
+  text-align: justify;
+  margin-top: 20px;
+
+}
+
+
+html, body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.weekend {
+  background: #f4f7f4 !important;
+}
+
+.gantt_selected .weekend {
+  background: #FFF3A1 !important;
+}
+
+.well {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .nav-stacked > li {
+    float: left;
+  }
+}
+
+
+.container-fluid .gantt_wrapper {
+  height: 700px;
+  width: 100%;
+}
+
+.gantt_container {
+  border-radius: 4px;
+}
+
+.gantt_grid_scale {
+  background-color: transparent;
+}
+
+.gantt_hor_scroll {
+  margin-bottom: 1px;
+}
+
+
+/*
+Accounting */
+
+#new-invoice {
+  margin: 0 10%;
+}
